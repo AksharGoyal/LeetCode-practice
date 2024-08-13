@@ -2,7 +2,7 @@
 pragma solidity 0.8.4; // Specify the Solidity version
 
 contract Solution {
-// Contracts are similar to classes as they act as a template for behaviour and can be used at various locations
+    // Contracts are similar to classes as they act as a template for behaviour and can be used at various locations
     /**
      * @param {uint256} a
      * @param {uint256} b

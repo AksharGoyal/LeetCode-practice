@@ -10,5 +10,6 @@ Would you like to contribute? Here are some ways:
 - suggest a more efficient solution
 - create a PR and add your solution
 - react with a star to the repository
-
+- improve README.md or fix mistakes if any
+  
 Looking forward to hearing feedback from you!
