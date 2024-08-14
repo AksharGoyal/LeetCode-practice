@@ -1,5 +1,5 @@
 [package]
-name = "two-sum"
+name = "two-sum-rust"
 version = "0.1.0"
 edition = "2021"
 

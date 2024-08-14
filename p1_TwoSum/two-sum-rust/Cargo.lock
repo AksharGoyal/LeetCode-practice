@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "two-sum"
+name = "two-sum-rust"
 version = "0.1.0"
