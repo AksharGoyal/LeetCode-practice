@@ -1,1 +1,28 @@
-**/target/
+# Rust
+/target/
+*.d
+*.rsc
+Cargo.lock
+
+# Solidity
+build/
+contracts/build-info/
+abigen/
+coverage/
+*.solc
+*.json
+
+# Common
+.vscode/
+.idea/
+*.iml
+*.suo
+*.cache
+*.log
+*.swp
+*~
+
+# Dependency managers
+/node_modules/
+npm-debug.log
+yarn-error.log
