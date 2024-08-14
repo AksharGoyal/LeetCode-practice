@@ -2,6 +2,7 @@
 /target/
 *.d
 *.rsc
+*.bin
 Cargo.lock
 
 # Solidity
