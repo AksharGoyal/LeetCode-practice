@@ -21,6 +21,7 @@ coverage/
 *.cache
 *.log
 *.swp
+**/*.html
 *~
 
 # Dependency managers
