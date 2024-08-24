@@ -1,0 +1,1 @@
+[{"inputs":[],"name":"c","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"calculateGas","outputs":[{"internalType":"uint256","name":"_gasUsed","type":"uint256"}],"stateMutability":"nonpayable","type":"function"}]
