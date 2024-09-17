@@ -15,6 +15,10 @@ impl ListNode {
   }
 }
 
+struct Solution {
+
+}
+
 impl Solution {
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         // A fascinating thing about Rust is the way it manages memory for efficient use.
@@ -59,4 +63,37 @@ impl Solution {
 
         dummy_head.next // return the result
     }
+}
+
+#[test]
+fn test_simple_sum() {
+  let l1 = Some(Box::new(ListNode::new(9)));
+  let l2 = Some(Box::new(ListNode::new(0)));
+  let result = Solution::add_two_numbers(l1, l2);
+  let answer = Some(Box::new(ListNode { val: 9, next: None}));
+  assert!(result == answer);
+}
+
+#[test]
+fn test_three_digit() {
+  let mut l1 = Box::new(ListNode::new(6));
+  l1.next = Some(Box::new(ListNode::new(9)));
+  let mut l2 = Box::new(ListNode::new(9));
+  l2.next = Some(Box::new(ListNode::new(6)));
+  let result = Solution::add_two_numbers(Some(l1), Some(l2));
+  let answer = Some(Box::new(ListNode { val: 5, next: Some(Box::new(ListNode { val: 6, next: Some(Box::new(ListNode { val: 1, next: None })) })) }));
+  assert_eq!(result, answer);
+}
+
+#[test]
+fn test_not_equal() {
+  let mut l1 = Box::new(ListNode::new(0));
+  let mut l2 = Box::new(ListNode::new(0));
+  let result = Solution::add_two_numbers(Some(l1), Some(l2));
+  let answer = Some(Box::new(ListNode { val: 0, next: Some(Box::new(ListNode { val: 1, next: None })) }));
+  assert_ne!(result, answer);
+}
+
+fn main() {
+  println!("Solution and Test for Add Two Nums");
 }

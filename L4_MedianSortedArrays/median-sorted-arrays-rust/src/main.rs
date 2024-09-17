@@ -4,7 +4,6 @@ struct Solution {
 
 impl Solution {
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
-    
         let mut nums_merged: Vec<i32> =  Vec::new(); // vectors will allow us to extend our list of elements as needed
         let mut i = 0;
         let mut j = 0;
@@ -39,7 +38,28 @@ impl Solution {
         return median;
         }
     }
-    
+
+#[test]
+fn test_one_empty_list() {
+    let l1 = vec![1, 2, 3, 4];
+    let l2 = Vec::new();
+    assert_eq!(Solution::find_median_sorted_arrays(l1, l2), 2.5);
+}
+
+// #[test]
+// fn test_two_empty_list() {
+//     let l1 = Vec::new();
+//     let l2 = Vec::new();
+//     assert_eq!(Solution::find_median_sorted_arrays(l1, l2), 2.5);
+// }
+
+#[test]
+fn test() {
+    let l1 = vec![1, 3, 7, 9];
+    let l2 = vec![2, 6, 8];
+    assert_eq!(Solution::find_median_sorted_arrays(l1, l2), 6.0);
+}
+
 fn main() {
-    
+    println!("Solution and Test for Median Sorted Arrays");
 }
